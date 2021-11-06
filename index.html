@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors | The Odin Project</title>
+    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="stylesheet" href="./css/normalize.css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-</body>
-<script src="app.js"></script>
-
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./images/logo1.png" />
+        <h2>Rock <span>Paper</span> Scissors</h2>
+      </div>
+      <div class="section">
+        <div class="content">
+          <div class="choices">
+            <div data-text="Rock">
+              <img src="images/rock.png" alt="Rock" />
+              <h3>Rock</h3>
+            </div>
+            <div data-text="Scissors">
+              <img src="images/logo.png" alt="Scissors" />
+              <h3>Scissors</h3>
+            </div>
+            <div data-text="Paper">
+              <img src="images/paper.png" alt="Paper" />
+              <h3>Paper</h3>
+            </div>
+          </div>
+        </div>
+        <h4>Press START To Play!</h4>
+        <div class="buttons">
+          <button type="start">Start</button>
+        </div>
+      </div>
+      <footer>
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+        />
+        Made with <i class="icon ion-heart" style="color: #e25555"></i>
+        <a href="https://github.com/xiyini">xiyiwi</a>
+      </footer>
+    </div>
+    <audio class="music" src="music/a.m4a"></audio>
+  </body>
+  <script src="app.js"></script>
 </html>
