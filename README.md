@@ -3,10 +3,14 @@
 Simple implementation of grade-school classic “rock paper scissors”. It is part of the curriculum for The Odin Project's Foundation path.
 
 ### To-do
-- [ ] implement core logic
+- [x] implement core logic
   - [x] getComputerChoise
-  - [ ] computerSelection
-  - [ ] PlayerSelection
+  - [x] computerSelection
+  - [x] PlayerSelection
+- [ ] winning logic
+  - [x] core logic
+  - [ ] return proper value
+- [ ] game loop
 
 ## Demo
 
