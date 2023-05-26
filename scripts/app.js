@@ -7,7 +7,8 @@ function getComputerChoice() {
   return [index, choice] // [ 1, 'paper' ]
 }
 
-function getPlayerChoice(choice) {
+function getPlayerChoice() {
+  choice = prompt('Rock or Paper or Scissors?')
   choice = choice.toLowerCase() // 'rock'
   index = RPS.indexOf(choice) // rock => 0
 
@@ -41,5 +42,28 @@ function singleRound(computerSelection, playerSelection) {
   }
 }
 
+function game() {
+  let round = 0
+  let playerScore = 0
+  let computerScore = 0
 
-singleRound(getComputerChoice(), getPlayerChoice('rock'))
+
+  while (round < 5) {
+    let winner = singleRound(getComputerChoice(), getPlayerChoice())
+
+    switch (winner) {
+      case 1:
+        playerScore++
+        break;
+      case 0:
+        computerScore++
+        break;
+    }
+    console.log(`Player: ${playerScore}`)
+    console.log(`computer: ${computerScore}`)
+    round++
+  }
+
+}
+
+game()
