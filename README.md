@@ -4,7 +4,7 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
 
 ### To-do
 - [ ] implement core logic
-  - [ ] getComputerChoise
+  - [x] getComputerChoise
   - [ ] computerSelection
   - [ ] PlayerSelection
 
