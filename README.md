@@ -12,10 +12,11 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
   - [x] `return` proper value
 - [ ] Game rounds
   - [x] Single round
-  - [ ] Repeat 5 times
-  - [ ] `console.log` each round's score
-  - [ ] `console.log` the end result
-- [ ] Use `prompt` to get user input
+  - [x] Repeat 5 times
+  - [x] `console.log` each round's score
+  - [x] `console.log` the end result
+  - [ ] report about the winner
+- [x] Use `prompt` to get user input
 - [ ] UI
   - [ ] Node
   - [ ] Browser

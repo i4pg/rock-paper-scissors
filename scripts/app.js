@@ -64,6 +64,8 @@ function game() {
     round++
   }
 
+  console.log(`Game Over!`)
+
 }
 
 game()
