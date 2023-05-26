@@ -8,6 +8,7 @@ function getComputerChoice() {
 }
 
 function getPlayerChoice() {
+  // NOTE: when getting wrong input it retunrs -1
   choice = prompt('Rock or Paper or Scissors?')
   choice = choice.toLowerCase() // 'rock'
   index = RPS.indexOf(choice) // rock => 0
@@ -24,7 +25,8 @@ function getOpposite(computerString) {
 
 
 function singleRound(computerSelection, playerSelection) {
-  let computerIndex, computerString = computerSelection
+  let computerIndex = computerSelection[0]
+  let computerString = computerSelection[1]
   let oppositeSide = getOpposite(computerString)
   let playerIndex = playerSelection[0]
 
