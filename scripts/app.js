@@ -1,12 +1,11 @@
 const RPS = ['rock', 'paper', 'scissors']
 
 function getComputerChoise() {
-  let choise = Math.floor(Math.random() * 3) // random number between 1~3
-  return RPS[choise]
+  return Math.floor(Math.random() * 3) // random number between 1~3
 }
 
 function getPlayerChoise(choise) {
-  return choise.toLowerCase()
+  return RPS.indexOf(choise.toLowerCase())
 }
 
 function round(computerSelection, playerSelection) {
@@ -16,15 +15,11 @@ function round(computerSelection, playerSelection) {
 function winningCombination(computerSelection, playerSelection) {
   const SPR = RPS.toReversed()
 
-  // using indeces for comparing
-  let p = RPS.indexOf(playerSelection)
-  let c = RPS.indexOf(computerSelection)
-
-  switch (p) {
-    case c:
+  switch (playerSelection) {
+    case computerSelection:
       console.log('tie')
       break;
-    case SPR.indexOf(RPS[c]):
+    case SPR.indexOf(RPS[computerSelection]):
       console.log('win')
       break;
 
