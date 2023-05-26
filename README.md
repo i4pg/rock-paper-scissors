@@ -3,14 +3,18 @@
 Simple implementation of grade-school classic “rock paper scissors”. It is part of the curriculum for The Odin Project's Foundation path.
 
 ### To-do
-- [x] implement core logic
-  - [x] getComputerChoise
-  - [x] computerSelection
-  - [x] PlayerSelection
-- [ ] winning logic
-  - [x] core logic
-  - [ ] return proper value
-- [ ] game loop
+- [x] Implement core logic
+  - [x] Get random choice for computer
+  - [x] Get player choice manually
+- [x] Winning logic
+  - [x] Core logic
+  - [x] `return` proper value
+- [ ] Game rounds
+  - [x] Single round
+  - [ ] Repeat 5 times
+  - [ ] `console.log` each round
+  - [ ] `console.log` the end result
+- [ ] Use `prompt` to get user input
 
 ## Demo
 
