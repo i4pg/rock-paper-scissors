@@ -5,7 +5,8 @@ function getComputerChoise() {
   return RPS[choise]
 }
 
-// test
-for (let index = 0; index < 5; index++) {
-  console.log(getComputerChoise())
+function getPlayerChoise(choise) {
+  return choise.toLowerCase()
 }
+
+
