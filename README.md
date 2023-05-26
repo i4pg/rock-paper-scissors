@@ -2,6 +2,12 @@
 
 Simple implementation of grade-school classic “rock paper scissors”. It is part of the curriculum for The Odin Project's Foundation path.
 
+### To-do
+- [ ] write code rps ~3d #logic @logic <!-- yyyy-mm-dd  --> 
+  - [ ] getComputerChoise
+  - [ ] computerSelection
+  - [ ] PlayerSelection
+
 ## Demo
 
 ~~You can play the game online [here](https://i4pg.github.io/rock-paper-scissors/).~~
