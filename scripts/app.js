@@ -25,24 +25,21 @@ function getOpposite(computerSelection) {
 }
 
 
-function getWinner(computerSelection, playerSelection) {
+function singleRound(computerSelection, playerSelection) {
   let oppositeSide = getOpposite(computerSelection)
 
   switch (playerSelection[0]) {
     case computerSelection[0]: // both are equal 
       console.log('TIE')
-      return -1
+      return 0
     case oppositeSide:
       console.log(`You Win! ${playerSelection[1]} beats ${computerSelection[1]}`)
       return 1
     default:
       console.log(`You Lose! ${computerSelection[1]} beats ${playerSelection[1]}`)
-      return 0
+      return -1
   }
 }
 
-function singleRound(computerSelection, playerSelection) {
-  let winner = getWinner(computerSelection, playerSelection)
-}
 
 singleRound(getComputerChoice(), getPlayerChoice('rock'))

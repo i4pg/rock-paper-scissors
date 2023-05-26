@@ -13,9 +13,13 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
 - [ ] Game rounds
   - [x] Single round
   - [ ] Repeat 5 times
-  - [ ] `console.log` each round
+  - [ ] `console.log` each round's score
   - [ ] `console.log` the end result
 - [ ] Use `prompt` to get user input
+- [ ] UI
+  - [ ] Node
+  - [ ] Browser
+- [ ] Two-Player mode
 
 ## Demo
 
