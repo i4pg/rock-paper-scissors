@@ -1,25 +1,25 @@
 const RPS = ['rock', 'paper', 'scissors']
 
 function getComputerChoice() {
-  let index = Math.floor(Math.random() * 3) // random number between 0~2
-  let choice = RPS[index] // 1 => paper 
+  index = Math.floor(Math.random() * 3) // random number between 0~2
+  choice = RPS[index] // 1 => paper 
 
-  return index, choice // [ 1, 'paper' ]
+  return [index, choice] // [ 1, 'paper' ]
 }
 
 function getPlayerChoice(choice) {
-  let choice = choice.toLowerCase() // 'rock'
-  let index = RPS.indexOf(choice) // rock => 0
+  choice = choice.toLowerCase() // 'rock'
+  index = RPS.indexOf(choice) // rock => 0
 
-  return index, choice // [ 0, 'rock' ]
+  return [index, choice] // [ 0, 'rock' ]
 }
 
 function getOpposite(computerSelection) {
   const SRP = ['scissors', 'rock', 'paper'] // RPS[0] beats SRP[0] and RPS[1] beats SRP[1]...
 
   // computerSelection => [ 2, 'scissors' ]
-  let string = SRP[computerSelection[0]] // 'paper'
-  let index = SRP.indexOf(string) // '0'
+  string = SRP[computerSelection[0]] // 'paper'
+  index = SRP.indexOf(string) // '0'
 
   return index
 }
