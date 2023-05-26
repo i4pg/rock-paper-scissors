@@ -4,12 +4,25 @@ function getComputerChoice() {
   return Math.floor(Math.random() * 3) // random number between 0~2
 }
 
-function getPlayerChoice(choice) {
-  return RPS.indexOf(choice.toLowerCase())
+function getPlayerChoice() {
+  return RPS.indexOf(getPlayerString())
 }
 
-function round(computerSelection, playerSelection) {
-  getWinner(computerSelection, playerSelection)
+function getPlayerString(choice) {
+  return choice.toLowerCase()
+}
+
+function singleRound(computerSelection, playerSelection) {
+  let winner = getWinner(computerSelection, playerSelection)
+
+  switch (winner) {
+    case value:
+
+      break;
+
+    default:
+      break;
+  }
 }
 
 function getWinner(computerSelection, playerSelection) {
@@ -20,12 +33,14 @@ function getWinner(computerSelection, playerSelection) {
 
   switch (playerSelection) {
     case computerSelection: // both are equal (TIE)
+      console.log('TIE')
       return -1
     case computerIndexInSRP: // Player beats Computer
+      console.log(`You Win!  beats Rock`)
       return 1
     default: // Computer beats Player
       return 0
   }
 }
 
-round(getComputerChoice(), getPlayerChoice('rock'))
+singleRound(getComputerChoice(), getPlayerString('rock'))

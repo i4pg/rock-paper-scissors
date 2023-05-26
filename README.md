@@ -4,8 +4,10 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
 
 ### To-do
 - [x] Implement core logic
-  - [x] Get random choice for computer
-  - [x] Get player choice manually
+  - [x] Get random choice for computer in index
+  - [x] Get random choice for computer in string
+  - [x] Get player choice manually in index
+  - [x] Get player choice manually in string
 - [x] Winning logic
   - [x] Core logic
   - [x] `return` proper value
