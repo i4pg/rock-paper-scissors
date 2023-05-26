@@ -10,12 +10,12 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
   - [x] Core logic
   - [x] Add comparing function
   - [x] `return` proper value
-- [ ] Game rounds
+- [x] Game rounds
   - [x] Single round
-  - [x] Repeat 5 times
+  - [x] Loop 5 times
   - [x] `console.log` each round's score
   - [x] `console.log` the end result
-  - [ ] report about the winner
+  - [x] Report about the winner
 - [x] Use `prompt` to get user input
 - [ ] UI
   - [ ] Node
