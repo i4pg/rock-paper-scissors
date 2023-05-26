@@ -64,8 +64,9 @@ function game() {
     round++
   }
 
-  console.log(`Game Over!`)
-
+  playerScore > computerScore
+    ? console.log(`Congratulation you won!`)
+    : console.log(`Sorry, you lost!`)
 }
 
 game()
