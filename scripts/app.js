@@ -1,7 +1,7 @@
 const RPS = ['rock', 'paper', 'scissors']
 
 function getComputerChoise() {
-  return Math.floor(Math.random() * 3) // random number between 1~3
+  return Math.floor(Math.random() * 3) // random number between 0~2
 }
 
 function getPlayerChoise(choise) {
@@ -13,24 +13,19 @@ function round(computerSelection, playerSelection) {
 }
 
 function getWinner(computerSelection, playerSelection) {
-  const SRP = ['scissors', 'rock', 'paper']   // RPS[0] beats SRP[0]
+  const SRP = ['scissors', 'rock', 'paper'] // RPS[0] beats SRP[0]
 
   let computerSelectionInString = RPS[computerSelection]
-  let computerSelectionSRP = SRP.indexOf(computerSelectionInString)
+  let computerIndexInSRP = SRP.indexOf(computerSelectionInString)
 
   switch (playerSelection) {
-    case computerSelection:
-      console.log('tie')
-      break;
-    case computerSelectionSRP:
-      console.log('win')
-      break;
-
-    default:
-      console.log('lose')
-      break;
+    case computerSelection: // both are equal (TIE)
+      return -1
+    case computerIndexInSRP: // Player beats Computer
+      return 1
+    default: // Computer beats Player
+      return 0
   }
-  console.log(RPS[playerSelection], RPS[computerSelection])
 }
 
 round(getComputerChoise(), getPlayerChoise('rock'))
