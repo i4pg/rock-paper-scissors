@@ -19,7 +19,7 @@ function getOpposite(computerSelection) {
 
   // computerSelection => [ 2, 'scissors' ]
   string = SRP[computerSelection[0]] // 'paper'
-  index = SRP.indexOf(string) // '0'
+  index = SRP.indexOf(computerSelection[1]) // '0'
 
   return index
 }
