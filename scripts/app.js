@@ -15,30 +15,29 @@ function getPlayerChoice() {
   return [index, choice] // [ 0, 'rock' ]
 }
 
-function getOpposite(computerSelection) {
+function getOpposite(computerString) {
   const SRP = ['scissors', 'rock', 'paper'] // RPS[0] beats SRP[0] and RPS[1] beats SRP[1]...
 
-  // computerSelection => [ 2, 'scissors' ]
-  string = SRP[computerSelection[0]] // 'paper'
-  index = SRP.indexOf(computerSelection[1]) // '0'
-
-  return index
+  // computerString => 'scissors'
+  return SRP.indexOf(computerString) // '0'
 }
 
 
 function singleRound(computerSelection, playerSelection) {
-  let oppositeSide = getOpposite(computerSelection)
+  let computerIndex, computerString = computerSelection
+  let oppositeSide = getOpposite(computerString)
+  let playerIndex = playerSelection[0]
 
-  switch (playerSelection[0]) {
-    case computerSelection[0]: // both are equal 
+  switch (playerIndex) {
+    case computerIndex:
       console.log('TIE')
-      return 0
+      return -1
     case oppositeSide:
       console.log(`You Win! ${playerSelection[1]} beats ${computerSelection[1]}`)
       return 1
     default:
       console.log(`You Lose! ${computerSelection[1]} beats ${playerSelection[1]}`)
-      return -1
+      return 0
   }
 }
 
@@ -59,14 +58,16 @@ function game() {
         computerScore++
         break;
     }
+
     console.log(`Player: ${playerScore}`)
     console.log(`computer: ${computerScore}`)
+
     round++
   }
 
   playerScore > computerScore
-    ? console.log(`Congratulation you won!`)
-    : console.log(`Sorry, you lost!`)
+    ? console.log(`Congratulation!`)
+    : console.log(`Sorry, you've lost!`)
 }
 
 game()
