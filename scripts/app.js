@@ -9,17 +9,20 @@ function getPlayerChoise(choise) {
 }
 
 function round(computerSelection, playerSelection) {
-  winningCombination(computerSelection, playerSelection)
+  getWinner(computerSelection, playerSelection)
 }
 
-function winningCombination(computerSelection, playerSelection) {
-  const SPR = RPS.toReversed()
+function getWinner(computerSelection, playerSelection) {
+  const SRP = ['scissors', 'rock', 'paper']   // RPS[0] beats SRP[0]
+
+  let computerSelectionInString = RPS[computerSelection]
+  let computerSelectionSRP = SRP.indexOf(computerSelectionInString)
 
   switch (playerSelection) {
     case computerSelection:
       console.log('tie')
       break;
-    case SPR.indexOf(RPS[computerSelection]):
+    case computerSelectionSRP:
       console.log('win')
       break;
 
@@ -27,7 +30,7 @@ function winningCombination(computerSelection, playerSelection) {
       console.log('lose')
       break;
   }
-  console.log(playerSelection, computerSelection)
+  console.log(RPS[playerSelection], RPS[computerSelection])
 }
 
-round(getComputerChoise(), getPlayerChoise('ROCk'))
+round(getComputerChoise(), getPlayerChoise('rock'))
