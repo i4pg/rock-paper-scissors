@@ -3,7 +3,7 @@
 Simple implementation of grade-school classic “rock paper scissors”. It is part of the curriculum for The Odin Project's Foundation path.
 
 ### To-do
-- [ ] write code rps ~3d #logic @logic <!-- yyyy-mm-dd  --> 
+- [ ] implement core logic
   - [ ] getComputerChoise
   - [ ] computerSelection
   - [ ] PlayerSelection
