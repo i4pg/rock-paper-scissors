@@ -1,11 +1,11 @@
 const RPS = ['rock', 'paper', 'scissors']
 
-function getComputerChoise() {
+function getComputerChoice() {
   return Math.floor(Math.random() * 3) // random number between 0~2
 }
 
-function getPlayerChoise(choise) {
-  return RPS.indexOf(choise.toLowerCase())
+function getPlayerChoice(choice) {
+  return RPS.indexOf(choice.toLowerCase())
 }
 
 function round(computerSelection, playerSelection) {
@@ -28,4 +28,4 @@ function getWinner(computerSelection, playerSelection) {
   }
 }
 
-round(getComputerChoise(), getPlayerChoise('rock'))
+round(getComputerChoice(), getPlayerChoice('rock'))
