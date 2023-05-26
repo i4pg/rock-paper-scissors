@@ -9,4 +9,8 @@ function getPlayerChoise(choise) {
   return choise.toLowerCase()
 }
 
+function round(computerSelection, playerSelection) {
+  console.log(computerSelection, playerSelection)
+}
 
+round(getComputerChoise(), getPlayerChoise('ROCk'))
