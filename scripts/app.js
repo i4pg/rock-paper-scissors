@@ -4,12 +4,16 @@ function getComputerChoice() {
   return Math.floor(Math.random() * 3) // random number between 0~2
 }
 
-function getPlayerChoice() {
-  return RPS.indexOf(getPlayerString())
+function getPlayerChoice(choice) {
+  return RPS.indexOf(choice)
 }
 
 function getPlayerString(choice) {
   return choice.toLowerCase()
+}
+
+function getComputerString(index) {
+  return RPS[index]
 }
 
 function singleRound(computerSelection, playerSelection) {
