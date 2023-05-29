@@ -74,4 +74,4 @@ function game() {
     : console.log(`Sorry, you've lost!`);
 }
 
-game();
+// game();
