@@ -65,7 +65,11 @@ To run this program locally, you can clone the repository to your local machine 
 
 Then open the `index.html` file in your web browser to start playing the game.
 
-Or simply run `node scripts/app.js` to play in your Terminal
+Or simply run 
+```bash
+node scripts/app.js
+``` 
+to play in your Terminal
 
 ## Contributing
 
