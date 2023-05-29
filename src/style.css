@@ -1,7 +1,8 @@
-@import "@catppuccin/palette/style";
+@import "../node_modules/@catppuccin/palette/css/catppuccin.css";
 
 body {
-  background-color: var(--ctp-mocha-base);
+	color: var(--ctp-mocha-text);
+	background: var(--ctp-frappe-base);
 }
 
 /* CONTAINER */

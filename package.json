@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@catppuccin/palette": "^0.1.8",
     "iconoir": "^6.8.0"
   },
   "devDependencies": {
