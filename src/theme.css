@@ -1,4 +1,4 @@
-.mocha {
+:root {
 	--ctp-mocha-base-hsl: hsl(240, 21%, 15%);
 	--ctp-mocha-base-raw: 30, 30, 46;
 	--ctp-mocha-base-rgb: rgb(30, 30, 46);
@@ -103,10 +103,7 @@
 	--ctp-mocha-yellow-raw: 249, 226, 175;
 	--ctp-mocha-yellow-rgb: rgb(249, 226, 175);
 	--ctp-mocha-yellow: #f9e2af;
-}
-
-.latte {
-  	--ctp-latte-base-hsl: hsl(220, 23%, 95%);
+  --ctp-latte-base-hsl: hsl(220, 23%, 95%);
 	--ctp-latte-base-raw: 239, 241, 245;
 	--ctp-latte-base-rgb: rgb(239, 241, 245);
 	--ctp-latte-base: #eff1f5;

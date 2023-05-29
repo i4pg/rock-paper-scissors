@@ -1,8 +1,36 @@
-@import "../node_modules/@catppuccin/palette/css/catppuccin.css";
+@import 'theme.css';
+
+:root {
+	--crust: var(--ctp-mocha-crust);
+	--mantle: var(--ctp-mocha-mantle);
+	--base: var(--ctp-mocha-base);
+	--surface0: var(--ctp-mocha-surface0);
+	--surface1: var(--ctp-mocha-surface1);
+	--surface2: var(--ctp-mocha-surface2);
+	--overlay0: var(--ctp-mocha-overlay0);
+	--overlay1: var(--ctp-mocha-overlay1);
+	--overlay2: var(--ctp-mocha-overlay2);
+	--subtext0: var(--ctp-mocha-subtext0);
+	--subtext1: var(--ctp-mocha-subtext1);
+	--text: var(--ctp-mocha-text);
+	--blue: var(--ctp-mocha-blue);
+	--sapphire: var(--ctp-mocha-sapphire);
+	--sky: var(--ctp-mocha-sky);
+	--mauve: var(--ctp-mocha-mauve);
+	--lavender: var(--ctp-mocha-lavender);
+	--peach: var(--ctp-mocha-peach);
+	--yellow: var(--ctp-mocha-yellow);
+	--green: var(--ctp-mocha-green);
+	--teal: var(--ctp-mocha-teal);
+	--red: var(--ctp-mocha-red);
+	--maroon: var(--ctp-mocha-maroon);
+	--pink: var(--ctp-mocha-pink);
+	--flamingo: var(--ctp-mocha-flamingo);
+	--rosewater: var(--ctp-mocha-rosewater);
+}
 
 body {
-	color: var(--ctp-mocha-text);
-	background: var(--ctp-frappe-base);
+  background-color: var(--ctp-mocha-base);
 }
 
 /* CONTAINER */
@@ -19,7 +47,7 @@ header {
   align-items: center;
 }
 
-header h2.logo {
+header .logo img {
   width: 60px;
 }
 
