@@ -67,7 +67,7 @@ Then open the `index.html` file in your web browser to start playing the game.
 
 Or simply run 
 ```bash
-node scripts/app.js
+$ node scripts/app.js
 ``` 
 to play in your Terminal
 
