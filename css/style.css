@@ -1,6 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "@catppuccin/palette/style";
+
+body {
+  background-color: var(--ctp-mocha-base);
+}
 
 /* CONTAINER */
 .container {
