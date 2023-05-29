@@ -20,6 +20,9 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
 - [ ] UI
   - [ ] Enhance Node environment
   - [ ] Browser
+    - [x] [wireframe](#Wireframe)
+    - [ ] import catppuccin colors
+    - [ ] night/dark mode
 
 ## Demo
 
@@ -37,6 +40,10 @@ You can play the game online in browser console [here](https://i4pg.github.io/ro
 <!-- *   It has a mobile-first responsive design, using [Bulma.io](https://bulma.io/). -->
 
 ## Showcase
+
+### Wireframe
+
+![](img/wireframe.png)
 
 <!-- Here are some screenshots of the Rock Paper Scissors game: -->
 
@@ -57,7 +64,8 @@ To run this program locally, you can clone the repository to your local machine 
 `git clone https://github.com/i4pg/rock-paper-scissors.git`
 
 Then open the `index.html` file in your web browser to start playing the game.
-Or simply run `node app.js` to play in your Terminal
+
+Or simply run `node scripts/app.js` to play in your Terminal
 
 ## Contributing
 
