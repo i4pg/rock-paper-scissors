@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CONTAINER */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2.logo {
+  width: 60px;
+}
+
+header nav ul {
+  display: flex;
+  gap: .7em;
+}
+
+header nav ul li {
+  cursor: pointer;
+}
+
+header nav ul li i {
+  font-size: 1.5rem;
+}
+
+#light {
+  display: none;
+}
+
+/* MAIN */
+
+main {
+  padding: 3em 0;
+}
+
+main .intro h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+main .intro p {
+  text-align: center;
+  font-size: 1em;
+}
