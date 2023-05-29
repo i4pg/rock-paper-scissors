@@ -18,13 +18,12 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
   - [x] Report about the winner
 - [x] Use `prompt` to get user input
 - [ ] UI
-  - [ ] Node
+  - [ ] Enhance Node environment
   - [ ] Browser
-- [ ] Two-Player mode
 
 ## Demo
 
-~~You can play the game online [here](https://i4pg.github.io/rock-paper-scissors/).~~
+You can play the game online in browser console [here](https://i4pg.github.io/rock-paper-scissors/).
 
 ## Features
 
@@ -49,7 +48,7 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
 
 ### Usage
 
-<!-- You can play the game online [here](https://i4pg.github.io/rock-paper-scissors/). -->
+You can play the game online in browser console [here](https://i4pg.github.io/rock-paper-scissors/).
 
 ### Installation
 
@@ -57,7 +56,8 @@ To run this program locally, you can clone the repository to your local machine 
 
 `git clone https://github.com/i4pg/rock-paper-scissors.git`
 
-<!-- Then open the `index.html` file in your web browser to start playing the game. -->
+Then open the `index.html` file in your web browser to start playing the game.
+Or simply run `node app.js` to play in your Terminal
 
 ## Contributing
 
