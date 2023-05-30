@@ -21,7 +21,7 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
   - [ ] Enhance Node environment
   - [ ] Browser
     - [x] [wireframe](#Wireframe)
-    - [ ] night/dark mode => woring on this now
+    - [x] night/dark mode
     - [x] header
 
 ## Demo

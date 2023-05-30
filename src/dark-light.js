@@ -1,18 +1,17 @@
 const lightBtn = document.getElementById('light')
 const darkBtn = document.getElementById('dark')
 
-function darkToggle(e) {
-  console.log(e)
+function darkToggle() {
   lightBtn.style.display = "block"
   darkBtn.style.display = "none"
-  document.body.classList.toggle('ctp-mocha')
+  document.body.className = "mocha"
 }
 
-function lightToggle(e) {
-  console.log(e)
+function lightToggle() {
+  console.log()
   darkBtn.style.display = "block"
   lightBtn.style.display = "none"
-  document.body.classList.toggle('ctp-mocha')
+  document.body.className = "latte"
 }
 
 lightBtn.addEventListener('click', lightToggle)

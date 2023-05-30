@@ -126,13 +126,23 @@ header nav ul li {
   cursor: pointer;
 }
 
+header nav ul #dark i {
+  color: var(--text);
+}
+
+header nav ul #light i {
+  color: var(--yellow);
+}
+
+header nav ul #light {
+  display: none;
+}
+
 header nav ul li i {
+  color: var(--sapphire);
   font-size: 1.5rem;
 }
 
-#light {
-  display: none;
-}
 
 /* MAIN */
 
