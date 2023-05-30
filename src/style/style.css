@@ -198,7 +198,8 @@ main #game-buttons h4 {
   }
 }
 
-main #game-buttons button {
+/* wild class */
+.button {
   border: none ;
   background-color: var(--lavender);
   border-radius: .75rem;
@@ -220,7 +221,7 @@ main #game-buttons button {
   transition-property: color, background-color;
 }
 
-main #game-buttons button:hover {
+.button:hover {
   background-color: var(--mauve);
 }
 
@@ -228,17 +229,20 @@ main #game-buttons button:hover {
 
 main #game-card {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 2em;
+  padding: 3em 1em;
   border-radius: 1.5em;
   position: relative;
   outline-style: solid;
   outline-width: 2px;
   outline-color: var(--pink);
+  display: flex;
+  flex-flow: column;
 }
 
 /* CHOICES */
 
 main #game-card #choices {
+  padding: 0 1em;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -249,3 +253,25 @@ main #game-card #choices img {
   width: 33.33%;
   cursor: pointer;
 }
+
+/* RESULT */
+
+main #game-card #result {
+  font-size: 1.4em;
+  color: var(--mauve);
+  padding: 1em 0em;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+main #game-card #result h5 {
+  border-bottom: solid 2px var(--blue);
+}
+
+main #game-card #result h5 div {
+  font-size: 1.4em;
+  margin-bottom: .7em;
+}
+
+
