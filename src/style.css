@@ -1,6 +1,14 @@
-@import 'theme.css';
+@import '../node_modules/normalize.css/normalize.css';
+@import '../node_modules/@catppuccin/palette/css/catppuccin.css';
 
-:root {
+@font-face {
+  font-family: "Cairo";
+  src: url('fonts/cairo_play/CairoPlay-VariableFont_slnt\,wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200 1000;
+}
+
+.mocha {
 	--crust: var(--ctp-mocha-crust);
 	--mantle: var(--ctp-mocha-mantle);
 	--base: var(--ctp-mocha-base);
@@ -29,8 +37,66 @@
 	--rosewater: var(--ctp-mocha-rosewater);
 }
 
+.latte {
+	--crust: var(--ctp-latte-crust);
+	--mantle: var(--ctp-latte-mantle);
+	--base: var(--ctp-latte-base);
+	--surface0: var(--ctp-latte-surface0);
+	--surface1: var(--ctp-latte-surface1);
+	--surface2: var(--ctp-latte-surface2);
+	--overlay0: var(--ctp-latte-overlay0);
+	--overlay1: var(--ctp-latte-overlay1);
+	--overlay2: var(--ctp-latte-overlay2);
+	--subtext0: var(--ctp-latte-subtext0);
+	--subtext1: var(--ctp-latte-subtext1);
+	--text: var(--ctp-latte-text);
+	--blue: var(--ctp-latte-blue);
+	--sapphire: var(--ctp-latte-sapphire);
+	--sky: var(--ctp-latte-sky);
+	--mauve: var(--ctp-latte-mauve);
+	--lavender: var(--ctp-latte-lavender);
+	--peach: var(--ctp-latte-peach);
+	--yellow: var(--ctp-latte-yellow);
+	--green: var(--ctp-latte-green);
+	--teal: var(--ctp-latte-teal);
+	--red: var(--ctp-latte-red);
+	--maroon: var(--ctp-latte-maroon);
+	--pink: var(--ctp-latte-pink);
+	--flamingo: var(--ctp-latte-flamingo);
+	--rosewater: var(--ctp-latte-rosewater);
+}
+
+/* Use the alternative box model */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Reset */
+
 body {
-  background-color: var(--ctp-mocha-base);
+  font-family: "Cairo", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body {
+  background-color: var(--base);
 }
 
 /* CONTAINER */
