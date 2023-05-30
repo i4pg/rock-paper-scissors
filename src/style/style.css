@@ -235,7 +235,7 @@ main #game-card {
   outline-style: solid;
   outline-width: 2px;
   outline-color: var(--pink);
-  display: flex;
+  display: none;
   flex-flow: column;
 }
 
@@ -257,21 +257,21 @@ main #game-card #choices img {
 /* RESULT */
 
 main #game-card #result {
-  font-size: 1.4em;
-  color: var(--mauve);
+  font-size: 1.2em;
+  color: var(--text);
   padding: 1em 0em;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 }
 
 main #game-card #result h5 {
-  border-bottom: solid 2px var(--blue);
+  border-bottom: solid 2px var(--green);
 }
 
 main #game-card #result h5 div {
-  font-size: 1.4em;
-  margin-bottom: .7em;
+  color: var(--peach);
+  margin-bottom: .5em;
 }
 
 
