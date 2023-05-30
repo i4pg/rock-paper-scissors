@@ -151,12 +151,15 @@ main {
 }
 
 main .intro h1 {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 900;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--maroon);
 }
 
 main .intro p {
   text-align: center;
   font-size: 1em;
+  font-weight: 400;
+  color: var(--subtext0)
 }
