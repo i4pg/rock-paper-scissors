@@ -23,6 +23,7 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
     - [x] [wireframe](#Wireframe)
     - [x] night/dark mode
     - [x] header
+    - [ ] Quit button "Scripts may close only the windows that were opened by them :( "
 
 ## Demo
 
