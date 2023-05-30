@@ -178,6 +178,26 @@ main #game-buttons {
   gap: 1em;
 }
 
+main #game-buttons h4 {
+  color: var(--rosewater);
+  text-align: center;
+  animation-name: toggle;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-direction: reverse;
+}
+
+@keyframes toggle {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 main #game-buttons button {
   border: none ;
   background-color: var(--lavender);
