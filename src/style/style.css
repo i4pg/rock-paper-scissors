@@ -168,6 +168,8 @@ main .intro p {
   font-weight: 700;
 }
 
+/* GAME-BUTTONS */
+
 main #game-buttons {
   padding: 2em 0;
   display: flex;
@@ -200,4 +202,19 @@ main #game-buttons button {
 
 main #game-buttons button:hover {
   background-color: var(--mauve);
+}
+
+/* GAME CARD */
+
+/* CHOICES */
+
+main #game-card #choices {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+main #game-card #choices img {
+  width: 33.33%;
 }
