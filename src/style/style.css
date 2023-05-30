@@ -226,6 +226,16 @@ main #game-buttons button:hover {
 
 /* GAME CARD */
 
+main #game-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2em;
+  border-radius: 1.5em;
+  position: relative;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: var(--pink);
+}
+
 /* CHOICES */
 
 main #game-card #choices {
@@ -237,4 +247,5 @@ main #game-card #choices {
 
 main #game-card #choices img {
   width: 33.33%;
+  cursor: pointer;
 }
