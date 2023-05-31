@@ -17,21 +17,32 @@ function getResult() {
   choices[0].src = choicesImagePath[computerSelection[0]]
   choices[2].src = choicesImagePath[playerSelection[0]]
   choicesElement.addEventListener('click', newRound, { once: true })
-  computerPointHTML.firstElementChild.textContent = computerScore
-  playerPointHTML.firstElementChild.textContent = playerScore
   helperMsg.textContent = 'click on any choice to continue'
   roundResult.textContent = resultMsg
+}
+
+function updateScore() {
+  computerPointHTML.firstElementChild.textContent = computerScore
+  playerPointHTML.firstElementChild.textContent = playerScore
+}
+
+function resetGame() {
+  score = 0
+  playerScore = 0
+  computerScore = 0
+  updateScore()
+  newRound()
 }
 
 function newRound() {
   roundResult.textContent = ''
   helperMsg.textContent = ''
-  choices[1].style.opacity = 1;
-  choices[0].src = choicesImagePath[0]
-  choices[2].src = choicesImagePath[2]
-  choices.forEach(choice => {
+
+  choices.forEach((choice, index) => {
+    choice.style.opacity = 1;
     choice.addEventListener('click', play)
     choice.style.cursor = "pointer"
+    choice.src = choicesImagePath[index]
   })
 }
 
