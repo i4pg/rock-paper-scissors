@@ -2,6 +2,53 @@
 
 Simple implementation of grade-school classic “rock paper scissors”. It is part of the curriculum for The Odin Project's Foundation path.
 
+## Demo
+
+You can play the game online in browser console [here](https://i4pg.github.io/rock-paper-scissors/).
+
+## Features
+
+* Nice shuffling for rock paper scissors choices
+* Light/Dark mode
+* The winner is displayed at the end of the game.
+* The game keeps running and calculating points.
+* Responsive mobile-first design
+
+## Showcase
+
+### Wireframe
+
+![](src/images/wireframe.png)
+
+### ScreenShots
+
+![](./src/images/showcase/127.0.0.1_8080_iPhone12Pro.png)
+
+![](./src/images/showcase/127.0.0.1_8080_iPhonePro.png)
+
+![](./src/images/showcase/127.0.0.1_8080_.png)
+
+![](./src/images/showcase/127.0.0.1_8080_1.png)
+
+## Getting Started
+
+### Usage
+
+You can play the game online in browser console [here](https://i4pg.github.io/rock-paper-scissors/).
+
+### Installation
+
+To run this program locally, you can clone the repository to your local machine using the following command:
+
+`git clone https://github.com/i4pg/rock-paper-scissors.git`
+
+Then open the `index.html` file in your web browser to start playing the game.
+
+~~Or simply run to play in your Terminal~~
+```bash
+$ node scripts/app.js
+``` 
+
 ### To-do
 - [x] Implement core logic
   - [x] Get random choice for computer
@@ -31,50 +78,6 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
     - [x] game over UI
     - [x] controllers
         - [x] 5 rounds game
-
-## Demo
-
-You can play the game online in browser console [here](https://i4pg.github.io/rock-paper-scissors/).
-
-## Features
-
-* Nice shuffling for rock paper scissors choices
-* Light/Dark mode
-* The winner is displayed at the end of the game.
-* The game keeps running and calculating points.
-* Responsive mobile-first design
-
-## Showcase
-
-### Wireframe
-
-![](src/images/wireframe.png)
-
-### ScreenShots
-
-![](./src/images/showcase/127.0.0.1_8080_iPhone12Pro.png)
-![](./src/images/showcase/127.0.0.1_8080_iPhone 12 Pro.png)
-![](./src/images/showcase/127.0.0.1_8080_.png)
-![](./src/images/showcase/127.0.0.1_8080_1.png)
-
-## Getting Started
-
-### Usage
-
-You can play the game online in browser console [here](https://i4pg.github.io/rock-paper-scissors/).
-
-### Installation
-
-To run this program locally, you can clone the repository to your local machine using the following command:
-
-`git clone https://github.com/i4pg/rock-paper-scissors.git`
-
-Then open the `index.html` file in your web browser to start playing the game.
-
-~~Or simply run to play in your Terminal~~
-```bash
-$ node scripts/app.js
-``` 
 
 ## Contributing
 
