@@ -3,8 +3,12 @@ let round = 0;
 let playerScore = 0;
 let computerScore = 0;
 
+function randomNumber(number) {
+  return Math.floor(Math.random() * number);
+}
+
 function getComputerChoice() {
-  index = Math.floor(Math.random() * 3); // random number between 0~2
+  index = randomNumber(3)
   choice = RPS[index]; // 1 => paper
 
   return [index, choice]; // [ 1, 'paper' ]
@@ -76,5 +80,3 @@ function gameConsole() {
     console.log(`Sorry, you've lost!`);
   }
 }
-
-gameConsole()
