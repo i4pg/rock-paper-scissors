@@ -20,11 +20,11 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
 - [ ] UI
   - [ ] Enhance Node environment visibility
   - [ ] run game.js from gameConsole.js
-  - [ ] Browser
+  - [x] Browser
     - [x] [wireframe](#Wireframe)
     - [x] night/dark mode
     - [x] header
-    ~~- [ ] Quit button "Scripts may close only the windows that were opened by them :( "~~
+    - [ ] Quit button "Scripts may close only the windows that were opened by them :( "
     - [x] intro
     - [x] main
     - [x] footer
@@ -73,11 +73,10 @@ To run this program locally, you can clone the repository to your local machine 
 
 Then open the `index.html` file in your web browser to start playing the game.
 
-~~Or simply run 
+~~Or simply run to play in your Terminal~~
 ```bash
 $ node scripts/app.js
 ``` 
-to play in your Terminal~~
 
 ## Contributing
 
