@@ -7,6 +7,7 @@ function newGame() {
   gameButtons.style.display = 'none'
   gameButtons.previousElementSibling.style.display = 'none'
   gameCard.style.display = 'flex'
+  resetDOMGame()
 }
 
 function resetDOMGame() {

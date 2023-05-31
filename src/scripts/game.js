@@ -30,7 +30,7 @@ function getOpposite(computerString) {
 }
 
 function resetGame() {
-  score = 0
+  round = 0
   playerScore = 0
   computerScore = 0
 }

@@ -168,6 +168,12 @@ main .intro p {
   font-weight: 700;
 }
 
+main .intro #winner-name {
+  text-align: center;
+  font-size: 1.5em;
+  color: var(--peach);
+}
+
 /* GAME-BUTTONS */
 
 main #game-buttons {
@@ -264,7 +270,6 @@ main #game-card #choices img {
 main #game-card #result {
   font-size: 1.2em;
   color: var(--text);
-  padding: 1em 0em;
   display: flex;
   justify-content: space-around;
   text-align: center;

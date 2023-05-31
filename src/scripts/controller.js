@@ -4,6 +4,8 @@ const helperMsgHTML = document.getElementById('helper-message')
 const roundResultHTML = document.getElementById('round-result')
 const computerPointHTML = document.getElementById('computer-result').firstElementChild
 const playerPointHTML = document.getElementById('player-result').firstElementChild
+const intro = document.getElementById('intro')
+const winnerElement = document.getElementById('winner-name')
 const choicesElementArray = [...choicesElement.children]
 const rockElement = choicesElementArray[0]
 const paperElement = choicesElementArray[1]
@@ -27,5 +29,3 @@ function controller(e) {
   shuffleController()
   setTimeout(postShuffling, 3000) // wait 3 seconds for the choice's shuffling
 }
-
-newRound()

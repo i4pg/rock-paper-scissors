@@ -18,7 +18,8 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
   - [x] Report about the winner
 - [x] Use `prompt` to get user input
 - [ ] UI
-  - [ ] Enhance Node environment
+  - [ ] Enhance Node environment visibility
+  - [ ] run game.js from gameConsole.js
   - [ ] Browser
     - [x] [wireframe](#Wireframe)
     - [x] night/dark mode
@@ -27,9 +28,9 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
     - [x] intro
     - [x] main
     - [ ] footer
-    - [ ] game over UI
-    - [ ] controllers
-        - [ ] 5 rounds game
+    - [x] game over UI
+    - [x] controllers
+        - [x] 5 rounds game
 
 ## Demo
 
@@ -72,11 +73,11 @@ To run this program locally, you can clone the repository to your local machine 
 
 Then open the `index.html` file in your web browser to start playing the game.
 
-Or simply run 
+~~Or simply run 
 ```bash
 $ node scripts/app.js
 ``` 
-to play in your Terminal
+to play in your Terminal~~
 
 ## Contributing
 
