@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "@catppuccin/palette": "^0.1.8",
-    "iconoir": "^6.8.0",
-    "normalize.css": "^8.0.1"
+    "iconoir": "^6.8.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
