@@ -29,6 +29,12 @@ function getOpposite(computerString) {
   return SRP.indexOf(computerString); // '0'
 }
 
+function resetGame() {
+  score = 0
+  playerScore = 0
+  computerScore = 0
+}
+
 function singleRound(computerSelection, playerSelection) {
   let computerIndex = computerSelection[0];
   let computerString = computerSelection[1];
@@ -38,17 +44,19 @@ function singleRound(computerSelection, playerSelection) {
   round++;
 
   switch (playerIndex) {
-
     case computerIndex:
-      return "TIE";
-
+      msg = "TIE";
+      console.log(msg);
+      return msg
     case oppositeSide:
       playerScore++;
-      return `You Win! ${playerSelection[1]} beats ${computerSelection[1]}`
-
+      msg = `You Win! ${playerSelection[1]} beats ${computerSelection[1]}`
+      console.log(msg);
+      return msg
     default:
       computerScore++;
-      return `You Lose! ${computerSelection[1]} beats ${playerSelection[1]}`
-
+      msg = `You Lose! ${computerSelection[1]} beats ${playerSelection[1]}`;
+      console.log(msg);
+      return msg
   }
 }
