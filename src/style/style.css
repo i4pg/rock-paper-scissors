@@ -97,7 +97,7 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--text);
+  color: var(--subtext1);
 }
 
 
@@ -115,7 +115,7 @@ body {
 header {
   width: 80%;
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -241,7 +241,7 @@ h4 {
 
 main #game-card {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 3em 1em;
+  padding: 2em 1em;
   border-radius: 1.5em;
   position: relative;
   outline-style: solid;
@@ -294,7 +294,7 @@ main #game-card #result h5 div {
 
 footer {
   text-align: center;
-  color: var(--teal);
+  color: var(--text);
   background-color: var(--surface0) ;
   padding: 1em 0;
   display: flex;
@@ -306,3 +306,8 @@ footer p {
   margin: 0;
   padding: .3rem 0;
 }
+
+footer section .catppuccin a {
+  color: var(--flamingo);
+}
+
