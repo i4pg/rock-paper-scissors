@@ -38,14 +38,11 @@ You can play the game online in browser console [here](https://i4pg.github.io/ro
 
 ## Features
 
-<!-- *   Two players can play the game (X and O). -->
-<!-- *   Players can take turns marking spaces on a 3x3 grid. -->
-<!-- *   The game ends when a player gets three in a row or all spaces are filled without a winner. -->
-<!-- *   The winner is displayed at the end of the game. -->
-<!-- *   The game keeps running and calculating points. -->
-<!-- *   It supports single player so you can play against a computer. -->
-<!-- *   The computer uses a simple algorithm that takes all the available moves, then loops twice. First, it tries each move and plays it if it's a winning move; otherwise, it goes to the next move. Second, if there is no winning move, it tries each possible move and plays there if it's preventing the opponent from winning; otherwise, it chooses a random place to play. -->
-<!-- *   It has a mobile-first responsive design, using [Bulma.io](https://bulma.io/). -->
+* Nice shuffling for rock paper scissors choices
+* Light/Dark mode
+* The winner is displayed at the end of the game.
+* The game keeps running and calculating points.
+* Responsive mobile-first design
 
 ## Showcase
 
@@ -53,11 +50,12 @@ You can play the game online in browser console [here](https://i4pg.github.io/ro
 
 ![](src/images/wireframe.png)
 
-<!-- Here are some screenshots of the Rock Paper Scissors game: -->
+### ScreenShots
 
-<!-- ![](./assest/showcase/cp1.gif) -->
-
-<!-- ![](./assest/showcase/multi.gif) -->
+![](./src/images/showcase/127.0.0.1_8080_iPhone12Pro.png)
+![](./src/images/showcase/127.0.0.1_8080_iPhone 12 Pro.png)
+![](./src/images/showcase/127.0.0.1_8080_.png)
+![](./src/images/showcase/127.0.0.1_8080_1.png)
 
 ## Getting Started
 

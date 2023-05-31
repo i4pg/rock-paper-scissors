@@ -156,7 +156,7 @@ header nav ul li i {
 main {
   width: 60%;
   margin: 0 auto;
-  padding: 3em 0;
+  padding: 1em 0;
 }
 
 main .intro h1 {
@@ -252,6 +252,7 @@ main #game-card {
 }
 
 main #game-card h3 {
+  margin: 0;
  text-align: center;
   color: var(--sky);
 }
