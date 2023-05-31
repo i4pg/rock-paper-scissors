@@ -1,0 +1,315 @@
+@import '../../src/style/normalize.css';
+@import '../../src/style/catppuccin.css';
+
+@font-face {
+  font-family: "Cairo";
+  src: url('../fonts/cairo_play/CairoPlay-VariableFont_slnt\,wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200 1000;
+}
+
+.mocha {
+	--crust: var(--ctp-mocha-crust);
+	--mantle: var(--ctp-mocha-mantle);
+	--base: var(--ctp-mocha-base);
+	--surface0: var(--ctp-mocha-surface0);
+	--surface1: var(--ctp-mocha-surface1);
+	--surface2: var(--ctp-mocha-surface2);
+	--overlay0: var(--ctp-mocha-overlay0);
+	--overlay1: var(--ctp-mocha-overlay1);
+	--overlay2: var(--ctp-mocha-overlay2);
+	--subtext0: var(--ctp-mocha-subtext0);
+	--subtext1: var(--ctp-mocha-subtext1);
+	--text: var(--ctp-mocha-text);
+	--blue: var(--ctp-mocha-blue);
+	--sapphire: var(--ctp-mocha-sapphire);
+	--sky: var(--ctp-mocha-sky);
+	--mauve: var(--ctp-mocha-mauve);
+	--lavender: var(--ctp-mocha-lavender);
+	--peach: var(--ctp-mocha-peach);
+	--yellow: var(--ctp-mocha-yellow);
+	--green: var(--ctp-mocha-green);
+	--teal: var(--ctp-mocha-teal);
+	--red: var(--ctp-mocha-red);
+	--maroon: var(--ctp-mocha-maroon);
+	--pink: var(--ctp-mocha-pink);
+	--flamingo: var(--ctp-mocha-flamingo);
+	--rosewater: var(--ctp-mocha-rosewater);
+}
+
+.latte {
+	--crust: var(--ctp-latte-crust);
+	--mantle: var(--ctp-latte-mantle);
+	--base: var(--ctp-latte-base);
+	--surface0: var(--ctp-latte-surface0);
+	--surface1: var(--ctp-latte-surface1);
+	--surface2: var(--ctp-latte-surface2);
+	--overlay0: var(--ctp-latte-overlay0);
+	--overlay1: var(--ctp-latte-overlay1);
+	--overlay2: var(--ctp-latte-overlay2);
+	--subtext0: var(--ctp-latte-subtext0);
+	--subtext1: var(--ctp-latte-subtext1);
+	--text: var(--ctp-latte-text);
+	--blue: var(--ctp-latte-blue);
+	--sapphire: var(--ctp-latte-sapphire);
+	--sky: var(--ctp-latte-sky);
+	--mauve: var(--ctp-latte-mauve);
+	--lavender: var(--ctp-latte-lavender);
+	--peach: var(--ctp-latte-peach);
+	--yellow: var(--ctp-latte-yellow);
+	--green: var(--ctp-latte-green);
+	--teal: var(--ctp-latte-teal);
+	--red: var(--ctp-latte-red);
+	--maroon: var(--ctp-latte-maroon);
+	--pink: var(--ctp-latte-pink);
+	--flamingo: var(--ctp-latte-flamingo);
+	--rosewater: var(--ctp-latte-rosewater);
+}
+
+/* Use the alternative box model */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Reset */
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-flow: column ;
+  justify-content: space-between ;
+  align-items: stretch;
+  font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--subtext1);
+}
+
+
+body {
+  background-color: var(--base);
+}
+
+/* CONTAINER */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 60px;
+}
+
+header nav ul {
+  display: flex;
+  gap: .7em;
+}
+
+header nav ul li {
+  cursor: pointer;
+}
+
+header nav ul #dark i {
+  color: var(--text);
+}
+
+header nav ul #light i {
+  color: var(--yellow);
+}
+
+header nav ul #light {
+  display: none;
+}
+
+header nav ul li i {
+  color: var(--sapphire);
+  font-size: 1.5rem;
+}
+
+/* MAIN */
+
+main {
+  width: 60%;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+main .intro h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--maroon);
+}
+
+main .intro p {
+  text-align: center;
+  font-size: 1em;
+  color: var(--subtext0);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+main .intro #winner-name {
+  text-align: center;
+  font-size: 1.5em;
+  color: var(--peach);
+}
+
+/* GAME-BUTTONS */
+
+main #game-buttons {
+  padding: 2em 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1em;
+}
+
+h4 {
+  color: var(--rosewater);
+  text-align: center;
+  animation-name: toggle;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-direction: reverse;
+}
+
+@keyframes toggle {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* wild class */
+.button {
+  border: none ;
+  background-color: var(--lavender);
+  border-radius: .75rem;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  color: var(--base);
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.button:hover {
+  background-color: var(--mauve);
+}
+
+/* GAME CARD */
+
+main #game-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2em 1em;
+  border-radius: 1.5em;
+  position: relative;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: var(--pink);
+  display: none;
+  flex-flow: column;
+}
+
+main #game-card h3 {
+  margin: 0;
+ text-align: center;
+  color: var(--sky);
+}
+
+/* CHOICES */
+
+main #game-card #choices {
+  padding: 0 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+main #game-card #choices img {
+  width: 33.33%;
+  cursor: pointer;
+}
+
+/* RESULT */
+
+main #game-card #result {
+  font-size: 1.2em;
+  color: var(--text);
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+main #game-card #result h5 {
+  border-bottom: solid 2px var(--green);
+  margin-bottom: 0;
+}
+
+main #game-card #result h5 div {
+  color: var(--peach);
+  margin-bottom: .5em;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  color: var(--text);
+  background-color: var(--surface0) ;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+  padding: .3rem 0;
+}
+
+footer section .catppuccin a {
+  color: var(--flamingo);
+}
+
