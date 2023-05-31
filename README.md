@@ -24,6 +24,11 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
     - [x] night/dark mode
     - [x] header
     - [ ] Quit button "Scripts may close only the windows that were opened by them :( "
+    - [x] intro
+    - [x] main
+    - [ ] footer
+    - [ ] game over UI
+    - [ ] controllers
 
 ## Demo
 

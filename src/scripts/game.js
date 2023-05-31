@@ -3,10 +3,6 @@ let round = 0;
 let playerScore = 0;
 let computerScore = 0;
 
-function randomNumber(number) {
-  return Math.floor(Math.random() * number);
-}
-
 function getComputerChoice() {
   index = randomNumber(3)
   choice = RPS[index]; // 1 => paper
@@ -61,21 +57,5 @@ function singleRound(computerSelection, playerSelection) {
       );
       return 0;
 
-  }
-}
-
-function gameConsole() {
-  while (round < 5) {
-    singleRound(getComputerChoice(), getPlayerChoice());
-    console.log(`Player: ${playerScore}`);
-    console.log(`computer: ${computerScore}`);
-  }
-
-  if (playerScore === computerScore) {
-    console.log("It's TIE game")
-  } else if (playerScore > computerScore) {
-    console.log(`Congratulation!`)
-  } else {
-    console.log(`Sorry, you've lost!`);
   }
 }

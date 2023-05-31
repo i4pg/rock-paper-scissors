@@ -2,6 +2,9 @@ const choicesElement = document.getElementById('choices')
 const choices = [...choicesElement.children]
 const choicesImagePath = ['src/images/rps/rock.png', 'src/images/rps/paper.png', 'src/images/rps/scissors.png']
 
+const computerPointHTML = document.getElementById('computer-result')
+const playerPointHTML = document.getElementById('player-result')
+
 function randomImage() {
   choices[0].src = choicesImagePath[randomNumber(3)]
   choices[2].src = choicesImagePath[randomNumber(3)]
@@ -12,6 +15,8 @@ function getResult() {
   choices[0].src = choicesImagePath[computerSelection[0]]
   choices[2].src = choicesImagePath[playerSelection[0]]
   choicesElement.addEventListener('click', newRound, { once: true })
+  computerPointHTML.firstElementChild.textContent = computerScore
+  playerPointHTML.firstElementChild.textContent = playerScore
 }
 
 function newRound() {
