@@ -49,7 +49,7 @@ You can play the game online in browser console [here](https://i4pg.github.io/ro
 
 ### Wireframe
 
-![](img/wireframe.png)
+![](src/images/wireframe.png)
 
 <!-- Here are some screenshots of the Rock Paper Scissors game: -->
 
