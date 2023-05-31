@@ -1,4 +1,5 @@
-const choices = Array.from(document.getElementById('choices').children)
+const choicesElement = document.getElementById('choices')
+const choices = [...choicesElement.children]
 const choicesImagePath = ['src/images/rps/rock.png', 'src/images/rps/paper.png', 'src/images/rps/scissors.png']
 
 function randomImage() {
@@ -10,6 +11,17 @@ function getResult() {
   singleRound(computerSelection, playerSelection)
   choices[0].src = choicesImagePath[computerSelection[0]]
   choices[2].src = choicesImagePath[playerSelection[0]]
+  choicesElement.addEventListener('click', newRound, { once: true })
+}
+
+function newRound() {
+  choices[1].style.opacity = 1;
+  choices[0].src = choicesImagePath[0]
+  choices[2].src = choicesImagePath[2]
+  choices.forEach(choice => {
+    choice.addEventListener('click', play)
+    choice.style.cursor = "pointer"
+  })
 }
 
 function play(e) {
@@ -24,11 +36,10 @@ function play(e) {
 
   let imageShuffle = setInterval(randomImage, 500)
   choices[1].style.opacity = 0;
-  setTimeout(clearInterval, 3500, imageShuffle, 500)
-  setTimeout(getResult, 3500)
+  setTimeout(clearInterval, 3000, imageShuffle, 500)
+  setTimeout(getResult, 3000)
 }
 
 choices.forEach(choice => {
   choice.addEventListener('click', play)
 });
-

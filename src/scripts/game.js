@@ -65,7 +65,6 @@ function singleRound(computerSelection, playerSelection) {
 }
 
 function gameConsole() {
-
   while (round < 5) {
     singleRound(getComputerChoice(), getPlayerChoice());
     console.log(`Player: ${playerScore}`);
