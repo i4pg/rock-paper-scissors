@@ -40,22 +40,15 @@ function singleRound(computerSelection, playerSelection) {
   switch (playerIndex) {
 
     case computerIndex:
-      console.log("TIE");
-      return -1;
+      return "TIE";
 
     case oppositeSide:
       playerScore++;
-      console.log(
-        `You Win! ${playerSelection[1]} beats ${computerSelection[1]}`
-      );
-      return 1;
+      return `You Win! ${playerSelection[1]} beats ${computerSelection[1]}`
 
     default:
       computerScore++;
-      console.log(
-        `You Lose! ${computerSelection[1]} beats ${playerSelection[1]}`
-      );
-      return 0;
+      return `You Lose! ${computerSelection[1]} beats ${playerSelection[1]}`
 
   }
 }
