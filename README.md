@@ -27,7 +27,7 @@ Simple implementation of grade-school classic “rock paper scissors”. It is p
     ~~- [ ] Quit button "Scripts may close only the windows that were opened by them :( "~~
     - [x] intro
     - [x] main
-    - [ ] footer
+    - [x] footer
     - [x] game over UI
     - [x] controllers
         - [x] 5 rounds game
