@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Cairo";
-  src: url('fonts/cairo_play/CairoPlay-VariableFont_slnt\,wght.ttf') format('truetype');
+  src: url('../fonts/cairo_play/CairoPlay-VariableFont_slnt\,wght.ttf') format('truetype');
   font-style: normal;
   font-weight: 200 1000;
 }
@@ -79,6 +79,11 @@ html {
 /* Reset */
 
 body {
+  height: 100vh;
+  display: flex;
+  flex-flow: column ;
+  justify-content: space-between ;
+  align-items: stretch;
   font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -92,6 +97,7 @@ li {
 
 a {
   text-decoration: none;
+  color: var(--text);
 }
 
 
@@ -284,4 +290,19 @@ main #game-card #result h5 div {
   margin-bottom: .5em;
 }
 
+/* FOOTER */
 
+footer {
+  text-align: center;
+  color: var(--teal);
+  background-color: var(--surface0) ;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+  padding: .3rem 0;
+}
