@@ -283,6 +283,7 @@ main #game-card #result {
 
 main #game-card #result h5 {
   border-bottom: solid 2px var(--green);
+  margin-bottom: 0;
 }
 
 main #game-card #result h5 div {
