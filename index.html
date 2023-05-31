@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Rock Paper Scissors</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="src/style/style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="src/images/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+  <script src="src/scripts/helper.js" defer></script>
+  <script src="src/scripts/component.js" defer></script>
+  <script src="src/scripts/buttons.js" defer></script>
+  <script src="src/scripts/listener.js" defer></script>
+  <script src="src/scripts/shuffle.js" defer></script>
+  <script src="src/scripts/game.js" defer></script>
+  <script src="src/scripts/controller.js" defer></script>
+  <script src="src/scripts/dark-light.js" defer></script>
+</head>
+
+<body class="latte">
+  <header>
+    <h2 class="logo"><img src="src/images/logo.png" alt="logo"></h2>
+    <nav>
+      <ul>
+        <li><a href="https://github.com/i4pg" target="_blank"><i class="iconoir-github"></i></a>
+        </li>
+        <li id="dark"><i class="iconoir-half-moon"></i></li>
+        <li id="light"><i class="iconoir-sun-light"></i></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="intro" class="intro">
+      <h1>Rock Paper Scissors</h1>
+      <p>also known by other orderings of the three items, with "rock"
+        sometimes being called
+        "stone," or as Rochambeau, roshambo, or ro-sham-bo</p>
+      <h4 id="winner-name"></h4>
+    </section>
+    <section id="game-buttons">
+      <h4>Press new game To Play!</h4>
+      <button id="new-game" class="button" type="button">NEW GAME</button>
+    </section>
+    <section id="game-card">
+      <div id="choices">
+        <img src="src/images/rps/rock.png" alt="rock">
+        <img src="src/images/rps/paper.png" alt="paper">
+        <img src="src/images/rps/scissors.png" alt="scissors">
+      </div>
+      <div id="result">
+        <h5 id="computer-result">
+          <div>
+            0
+          </div>
+          Computer
+        </h5>
+        <h5 id="player-result">
+          <div>
+            0
+          </div>
+          You
+        </h5>
+      </div>
+      <h4 id="helper-message"></h4>
+      <h3 id="round-result"></h3>
+      <button id="reset" class="button" type="button">RESET!</button>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <p class="love">
+        <svg viewBox="0 0 1792 1792" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+          style="height: 0.8rem;">
+          <path
+            d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26T145 952.5 77 855 23.5 734 0 596q0-220 127-344t351-124q62 0 126.5 21.5t120 58T820 276t76 68q36-36 76-68t95.5-68.5 120-58T1314 128q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z"
+            fill="var(--red)"></path>
+        </svg>
+      </p>
+      <p><a target="_blank" href="https://www.twitter/com/wiyih">Abdullah Alattas</a></p>
+      <p class="catppuccin"><a href="https://github.com/catppuccin/catppuccin">Catppuccin colors</a></p>
+      <p class="odin"><a href="https://theodinproject.com">The Odin Project</a></p>
+    </section>
+  </footer>
+</body>
+
+</html>
