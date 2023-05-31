@@ -15,6 +15,6 @@ function activeDOMListener() {
 }
 
 function continueLestining() {
-  choicesElement.addEventListener('click', newRound, { once: true })
-  helperMsgHTML.textContent = 'click on any choice to continue'
+  gameCard.addEventListener('click', newRound, { once: true })
+  helperMsgHTML.textContent = 'click anywhere to continue'
 }
